@@ -1,0 +1,8 @@
+body {
+    background-color: blue;
+    color: coral;
+    -webkit-text-fill-color: indigo;
+}
+text {
+    text-color: red.
+    }
