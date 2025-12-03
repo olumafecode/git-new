@@ -1,10 +1,20 @@
-function add (x,y) {
-    return(x+y);
-}
-add(3,5);
+//let num1 = parseInt(prompt("Type in a number."));
+//let num2 = parseInt(prompt("Type in another number."));
 
-prompt("Type in a number.")
-prompt("Type in another number.")
-let num1 = (prompt("Type in a number."))
-let num2 = (prompt("Type in another number."))
-alert("The sum is " + add(num1, num2));
+//function add (x,y) {
+    //return x + y;
+//}
+//alert("The sum is " + add(num1, num2));
+const passing = 75;
+function getCurrent () {
+    return parseInt(prompt("Type in your current score."));
+}
+function getWeight () {
+    return parseInt(prompt("Type in the weight of the final exam."));
+}
+function calculate (c, w) {
+    let finalScore = (passing - (1-(w/100))*c)/(w/100)
+    let rounded = Math.round(finalScore);
+    return "You must get a score of ${rounded}% on the to pass this course.";
+}
+alert(calculate(getCurrent(), getWeight()));
